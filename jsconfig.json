@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@pages/*": [
+                "./cypress/pages/*"
+            ]
+        },
+        "target": "es6",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "types": [
+            "cypress"
+        ],
+        "allowJs": true,
+    },
+    "include": [
+        "**/*.{js,ts}",
+        "[filepath]/**/*.{js,ts}"
+    ]
+}
