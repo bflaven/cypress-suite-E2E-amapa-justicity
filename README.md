@@ -265,7 +265,7 @@ node -v
 # v18.12.1
 
 npx -v
-# 6.14.15
+# 9.6.5
 ```
 
 
@@ -275,21 +275,19 @@ npx -v
 
 | ACTION  |  VERSION | DATE  |
 |---|---|---|
-| **Upgrade to Cypress** | **12.11.0** | **29/04/23**  |
+| **Cypress** | **12.11.0** | **29/04/23**  |
 
 ### Node
 
 | ACTION  |  VERSION | DATE  |
 |---|---|---|
-| ~~Install Node~~ | ~~v14.18.1~~ | ~~07/11/22~~  |
-| **Upgrade to Node** | **v18.12.1** | **04/01/23**  |
+| **to Node** | **v18.12.1** | **29/01/23**  |
+
 
 
 ## OTHERS
 
 - Chance is a minimalist generator of random [1] strings, numbers, etc. to help reduce some monotony particularly while writing automated tests or anywhere else you need anything random.
-
-
 https://chancejs.com/
 
 - Fast 2kB alternative to Moment.js with the same modern API
