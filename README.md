@@ -1,0 +1,1 @@
+# cypress-suite-E2E-amapa-justicity
