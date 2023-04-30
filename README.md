@@ -318,21 +318,21 @@ npx -v
 
 ## OTHERS
 
-- A library: Chance is a minimalist generator of random [1] strings, numbers, etc. to help reduce some monotony particularly while writing automated tests or anywhere else you need anything random.
+- A library: This is a library named `chancejs`. Chance is a minimalist generator of random [1] strings, numbers, etc. to help reduce some monotony particularly while writing automated tests or anywhere else you need anything random.
 https://chancejs.com/
 
-- A library: Fast 2kB alternative to Moment.js with the same modern API
+- A library: This is a library named `day.js`. It is a fast 2kB alternative to Moment.js with the same modern API
 https://day.js.org/
 
-- The model project: cypress-cucumber-boilerplate-for-e2e-testing
-https://github.com/JoanEsquivel/cypress-cucumber-boilerplate
+- The model project: This is the model project slighly modified `cypress-cucumber-boilerplate-for-e2e-testing` 
+More on https://github.com/JoanEsquivel/cypress-cucumber-boilerplate
 
 
-- A package: cypress-web-vitals
-https://www.npmjs.com/package/cypress-web-vitals
+- A package: `cypress-web-vitals` 
+More on https://www.npmjs.com/package/cypress-web-vitals
 `npm install --save-dev cypress-web-vitals cypress-real-events`
 
-- A package: cypress-eslint-preprocessor
-https://www.npmjs.com/package/cypress-eslint-preprocessor
+- A package: `cypress-eslint-preprocessor`  
+More on https://www.npmjs.com/package/cypress-eslint-preprocessor
 `npm install cypress-eslint-preprocessor --save-dev`
 
