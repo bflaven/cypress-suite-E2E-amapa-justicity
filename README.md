@@ -109,7 +109,7 @@ npx cypress run
 
 ### Fichiers users
 
-**Il faut mettre les bons crédentiels dans le fichier `cypress.env.json` pour permmetre au login de fonctionner.**
+**Il faut mettre les bons crédentials dans le fichier `cypress.env.json` pour permmetre au login de fonctionner.**
 
 
 ### Fichiers de configuration

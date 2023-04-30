@@ -17,6 +17,9 @@
 import './commands'
 import '@shelex/cypress-allure-plugin';
 
+// https://www.npmjs.com/package/cypress-web-vitals
+import "cypress-web-vitals";
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 

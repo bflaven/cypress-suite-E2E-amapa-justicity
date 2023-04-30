@@ -75,6 +75,7 @@ describe('002 @backoffice @login @mediateur @user @dashboard @mediation :: for '
         it('002_1 @backoffice @login @mediateur @dashboard @navigation :: on ' + globalValues.DEVICE_TYPE + ' :: TESTING DASHBOARD MEDIATEUR :: NAVIGATION DASHBOARD (AppJusticityDashboardNav)', function () {
                 
                     cy.AppJusticityDashboardNav()
+                    
 
 
         });
