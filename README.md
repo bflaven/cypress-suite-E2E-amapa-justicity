@@ -45,6 +45,18 @@ Pour editer les fichiers Gherkin `.feature`, vous pouvez utiliser des editeurs t
 - **`004_testing_screens_complete_mediation_file_mediateur.cy.js`**
 
 
+**Dans le répertoire `webvitals`**
+
+> Web Vitals is an initiative by Google to provide unified guidance for quality signals that are essential to delivering a great user experience on the web.
+
+Voir plus  https://web.dev/vitals/
+
+
+- **`001_web_vitals_defaults.cy.js`**
+- **`002_web_vitals_custom.cy.js`**
+- **`003_web_vitals_report.cy.js`**
+
+
 ## INSTALL
 Pour installer la suite E2E-CYPRESS-APPS sur un PC windows ou un MAC via la console.
 
@@ -177,6 +189,25 @@ npx cypress open --env DEVICE_TYPE="mobile" --config video=true,screenshotOnRunF
 **Here is the command’s complete list available for shortcuts. These commands are defined in `package.json`**
 ```bash
 
+# more command to select the device
+
+# specify the device
+
+# open E2E in the runner for desktop. d stands for desktop
+npm run cy:open:d
+
+# open E2E in the runner for desktop. t stands for tablet
+npm run cy:open:t
+
+# open E2E in the runner for desktop. d stands for mobile
+npm run cy:open:m
+
+# open E2E in the runner for desktop. d stands for mobile-landscape
+npm run cy:open:ml
+
+# open E2E in the runner for desktop. d stands for tablet-landscape
+npm run cy:open:tl
+
 
 # open E2E in the runner
 npm run cy:open
@@ -296,4 +327,12 @@ https://day.js.org/
 - cypress-cucumber-boilerplate-for-e2e-testing
 https://github.com/JoanEsquivel/cypress-cucumber-boilerplate
 
+
+- cypress-web-vitals
+https://www.npmjs.com/package/cypress-web-vitals
+`npm install --save-dev cypress-web-vitals cypress-real-events`
+
+- cypress-eslint-preprocessor
+https://www.npmjs.com/package/cypress-eslint-preprocessor
+`npm install cypress-eslint-preprocessor --save-dev`
 
