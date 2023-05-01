@@ -42,7 +42,11 @@ Pour editer les fichiers Gherkin `.feature`, vous pouvez utiliser des editeurs t
 **Dans le répertoire `features`**
 
 - **`001_login_justicity.feature`**
+En Gherkin, le test `001_1` se logue avec succès puis teste le "user settings panel". Dans le test `001_1`, il faut remplacer les credentials par les valeurs correctes. Le test `001_2` échoue intentionnellement au login.
+
 - **`002_testing_screens_all_amapa.feature`**
+Le test `002_1` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreenOneCheckCode`. Le test `002_2` checke les écrans SCREEN_1 de la PARTIE_A la présence d'éléments dans le code à l'aide d'une DataTable.
+
 
 **Dans le répertoire `site`**
 
@@ -54,14 +58,13 @@ Pour editer les fichiers Gherkin `.feature`, vous pouvez utiliser des editeurs t
 
 **Dans le répertoire `webvitals`**
 
-> Web Vitals is an initiative by Google to provide unified guidance for quality signals that are essential to delivering a great user experience on the web.
-
-Voir plus  https://web.dev/vitals/
-
-
 - **`001_web_vitals_defaults.cy.js`**
 - **`002_web_vitals_custom.cy.js`**
 - **`003_web_vitals_report.cy.js`**
+
+> Web Vitals is an initiative by Google to provide unified guidance for quality signals that are essential to delivering a great user experience on the web.
+
+Voir plus  https://web.dev/vitals/
 
 
 ## INSTALL

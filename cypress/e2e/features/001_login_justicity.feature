@@ -7,7 +7,7 @@ Feature Login page will work depending on the user credentials.
     Given A web browser is at the "Justicity" login page
   
   Scenario: 001_1 :: Justicity Success Login
-     When A user enters the username "bruno@flaven.net", the password "Bruno1971", and clicks on the login button
+     When A user enters the username "change_email", the password "change_password", and clicks on the login button
      Then as a user I can access to the User settings panel
   
   Scenario: 001_2 :: Justicity Incorrect Username Login
