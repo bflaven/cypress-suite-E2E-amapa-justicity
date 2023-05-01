@@ -56,7 +56,7 @@ Le test `001` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonctio
 - **`002_testing_screens_dashboard_mediateur.cy.js`**
     - Le test `002_1` checke la navigation principaple une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardNav()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
-    -- Le test `002_2` checke le "user settings panel" une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardUserSettings()`.
+    - Le test `002_2` checke le "user settings panel" une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardUserSettings()`.
 
     - Les tests `002_3`, `002_4` checke les écrans complets de de deux destinations différentes via la fonction `cy.AppJusticityDashboardDestination()`, c'est pour démontrer que l'approche par slug est possible pour s'affranchir de la navigation et des css selectors. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
