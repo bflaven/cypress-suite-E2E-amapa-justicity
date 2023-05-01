@@ -45,23 +45,41 @@ Pour editer les fichiers Gherkin `.feature`, vous pouvez utiliser des editeurs t
 En Gherkin, le test `001_1` se logue avec succès puis teste le "user settings panel". Dans le test `001_1`, il faut remplacer les credentials par les valeurs correctes. Le test `001_2` échoue intentionnellement au login.
 
 - **`002_testing_screens_all_amapa.feature`**
-Le test `002_1` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreenOneCheckCode`. Le test `002_2` checke les écrans SCREEN_1 de la PARTIE_A la présence d'éléments dans le code à l'aide d'une DataTable.
+En Gherkin, le test `002_1` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreenOneCheckCode`. Le test `002_2` checke les écrans SCREEN_1 de la PARTIE_A la présence d'éléments dans le code à l'aide d'une DataTable.
 
 
 **Dans le répertoire `site`**
 
 - **`001_testing_screens_all_amapa.cy.js`**
-- **`002_testing_screens_dashboard_mediateur.cy.js`**
-- **`003_testing_screens_dashboard_user.cy.js`**
-- **`004_testing_screens_complete_mediation_file_mediateur.cy.js`**
+Le test `001` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreensAll() `. Il parcourt la creation d'une médiation depuis l'AMAPA. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
+- **`002_testing_screens_dashboard_mediateur.cy.js`**
+    -- Le test `002_1` checke la navigation principaple une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardNav()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
+
+    -- Le test `002_2` checke le "user settings panel" une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardUserSettings()`.
+
+    -- Les tests `002_3`, `002_4` checke les écrans complets de de deux destinations différentes via la fonction `cy.AppJusticityDashboardDestination()`, c'est pour démontrer que l'approche par slug est possible pour s'affranchir de la navigation et des css selectors. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
+
+- **`003_testing_screens_dashboard_user.cy.js`**
+Le test `003_1` checke les écrans du Dashboard en tant que USER à l'aide d'une fonction `cy.AppAmapaJusticityScreensAll()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
+
+- **`004_testing_screens_complete_mediation_file_mediateur.cy.js`**
+    -- Le test `004_1` est identique au test précédent `003_1`.
+
+    -- Le test `004_2` checke les écrans du Dashboard en tant que ADMIN à l'aide d'une fonction `cy.AppJusticityDashboardCompleteMediation()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
 **Dans le répertoire `webvitals`**
 
 - **`001_web_vitals_defaults.cy.js`**
-- **`002_web_vitals_custom.cy.js`**
-- **`003_web_vitals_report.cy.js`**
+Exemple basique d'utilisation de Web Vitals sur le backoffice de justicity
 
+- **`002_web_vitals_custom.cy.js`**
+Exemple personnalisé d'utilisation de Web Vitals sur le backoffice de justicity.
+
+- **`003_web_vitals_report.cy.js`**
+Exemple personnalisé de Web Vitals sur le backoffice de justicity avec impression d'un rapport d'activité réduit dans le log du test lui-même.
+
+**Définition de Web Vitals**
 > Web Vitals is an initiative by Google to provide unified guidance for quality signals that are essential to delivering a great user experience on the web.
 
 Voir plus  https://web.dev/vitals/
@@ -148,7 +166,7 @@ Dans le répertoire `cypress/fixtures/`, il y de nombreuses valeurs externalisé
 Il y a une valeur importante : DEVICE_TYPE.
 
 #### (i) DEVICE_TYPE
-**Il est possible de cibler un terminal particulier e.g desktop, tablet, mobile... etc et donc de faire tourner les tests sur un device en particulier.**
+**Attention, ce choix possible du device n'est valable que pour les tests en JS `*.cy.js`  dans le répertoire `site`. Il est possible de cibler un terminal particulier e.g desktop, tablet, mobile... etc et donc de faire tourner les tests sur un device en particulier.**
 
 ```bash
 # DEVICE_TYPE
