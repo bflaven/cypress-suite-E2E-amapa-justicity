@@ -54,19 +54,19 @@ En Gherkin, le test `002_1` checke les écrans SCREEN_1 de la PARTIE_A à l'aide
 Le test `001` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreensAll() `. Il parcourt la creation d'une médiation depuis l'AMAPA. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
 - **`002_testing_screens_dashboard_mediateur.cy.js`**
-    -- Le test `002_1` checke la navigation principaple une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardNav()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
+    - Le test `002_1` checke la navigation principaple une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardNav()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
     -- Le test `002_2` checke le "user settings panel" une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardUserSettings()`.
 
-    -- Les tests `002_3`, `002_4` checke les écrans complets de de deux destinations différentes via la fonction `cy.AppJusticityDashboardDestination()`, c'est pour démontrer que l'approche par slug est possible pour s'affranchir de la navigation et des css selectors. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
+    - Les tests `002_3`, `002_4` checke les écrans complets de de deux destinations différentes via la fonction `cy.AppJusticityDashboardDestination()`, c'est pour démontrer que l'approche par slug est possible pour s'affranchir de la navigation et des css selectors. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
 - **`003_testing_screens_dashboard_user.cy.js`**
 Le test `003_1` checke les écrans du Dashboard en tant que USER à l'aide d'une fonction `cy.AppAmapaJusticityScreensAll()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
 - **`004_testing_screens_complete_mediation_file_mediateur.cy.js`**
-    -- Le test `004_1` est identique au test précédent `003_1`.
+    - Le test `004_1` est identique au test précédent `003_1`.
 
-    -- Le test `004_2` checke les écrans du Dashboard en tant que ADMIN à l'aide d'une fonction `cy.AppJusticityDashboardCompleteMediation()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
+    - Le test `004_2` checke les écrans du Dashboard en tant que ADMIN à l'aide d'une fonction `cy.AppJusticityDashboardCompleteMediation()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
 **Dans le répertoire `webvitals`**
 
