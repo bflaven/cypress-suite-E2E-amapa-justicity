@@ -9,9 +9,16 @@
 **Les tests sont dans `/cypress/e2e/site`, `/cypress/e2e/features`, `/cypress/e2e/step_definitions`**
 
 
-Pour editer les fichiers Gherkin `.feature`, vous pouvez utiliser des editeurs type Sublime, VS code ou/et Tidy Gherkin.
+Pour éditer les fichiers Gherkin `.feature`, il est possible d'utiliser n'importe quel éditeur e.g. Sublime, VS code avec en complement Tidy Gherkin.
+
 
 - [Installer Tidy Gherkin sur Chrome](https://chrome.google.com/webstore/detail/tidy-gherkin/nobemmencanophcnicjhfhnjiimegjeo?hl=en-GB)
+- https://www.sublimetext.com/
+- https://visualstudio.microsoft.com/fr/downloads/
+
+
+*Il existe plein de de packages (sublime) ou d'extensions (VS code) pour faciliter l'édition des test cypress `*.cy.js` et des gherkin `*.feature`notamment d'autocompletion ou de color coding pour la syntaxe.*
+
 
 
 **Arborescence des tests**
