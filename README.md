@@ -26,8 +26,15 @@ Pour editer les fichiers Gherkin `.feature`, vous pouvez utiliser des editeurs t
 │   ├── 002_testing_screens_dashboard_mediateur.cy.js
 │   ├── 003_testing_screens_dashboard_user.cy.js
 │   └── 004_testing_screens_complete_mediation_file_mediateur.cy.js
-└── step_definitions
-    └── Hooks.js
+├── step_definitions
+│   └── Hooks.js
+└── webvitals
+    ├── 001_web_vitals_defaults.cy.js
+    ├── 002_web_vitals_custom.cy.js
+    └── 003_web_vitals_report.cy.js
+
+4 directories, 10 files
+
 ```
 
 ## Présentation de la suite `cypress-suite-E2E-amapa-justicity`
