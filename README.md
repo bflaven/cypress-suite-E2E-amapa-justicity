@@ -9,7 +9,7 @@
 **Les tests sont dans `/cypress/e2e/site`, `/cypress/e2e/features`, `/cypress/e2e/step_definitions`**
 
 
-Pour éditer les fichiers Gherkin `.feature`, il est possible d'utiliser n'importe quel éditeur e.g. Sublime, VS code avec en complement Tidy Gherkin.
+Pour éditer les fichiers Gherkin `.feature`, il est possible d'utiliser n'importe quel éditeur e.g. Sublime, VS code avec en complément Tidy Gherkin.
 
 
 - [Installer Tidy Gherkin sur Chrome](https://chrome.google.com/webstore/detail/tidy-gherkin/nobemmencanophcnicjhfhnjiimegjeo?hl=en-GB)
@@ -17,7 +17,7 @@ Pour éditer les fichiers Gherkin `.feature`, il est possible d'utiliser n'impor
 - https://visualstudio.microsoft.com/fr/downloads/
 
 
-*Il existe plein de de packages (sublime) ou d'extensions (VS code) pour faciliter l'édition des test cypress `*.cy.js` et des gherkin `*.feature`notamment d'autocompletion ou de color coding pour la syntaxe.*
+*Il existe plein de de packages (sublime) ou d'extensions (VS code) pour faciliter l'édition des tests Cypress `*.cy.js` et des Gherkin `*.feature`notamment d'autocompletion ou/et de color coding pour la syntaxe.*
 
 
 
@@ -49,21 +49,21 @@ Pour éditer les fichiers Gherkin `.feature`, il est possible d'utiliser n'impor
 **Dans le répertoire `features`**
 
 - **`001_login_justicity.feature`**
-En Gherkin, le test `001_1` se logue avec succès puis teste le "user settings panel". Dans le test `001_1`, il faut remplacer les credentials par les valeurs correctes. Le test `001_2` échoue intentionnellement au login.
+En Gherkin, le test `001_1` se logue avec succès puis teste le "user settings panel". Dans le test `001_1`, il faut remplacer les credentials par les valeurs correctes. Le test `001_2` échoue intentionnellement au login avec de mauvais credentials.
 
 - **`002_testing_screens_all_amapa.feature`**
-En Gherkin, le test `002_1` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreenOneCheckCode`. Le test `002_2` checke les écrans SCREEN_1 de la PARTIE_A la présence d'éléments dans le code à l'aide d'une DataTable.
+En Gherkin, le test `002_1` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreenOneCheckCode`. Le test `002_2` checke sur les écrans SCREEN_1 de la PARTIE_A, la présence d'éléments dans le code HTML à l'aide d'une DataTable.
 
 
 **Dans le répertoire `site`**
 
 - **`001_testing_screens_all_amapa.cy.js`**
-Le test `001` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreensAll() `. Il parcourt la creation d'une médiation depuis l'AMAPA. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
+Le test `001` checke les écrans SCREEN_1 de la PARTIE_A à l'aide d'une fonction `cy.AppAmapaJusticityScreensAll() `. Il parcourt la création d'une médiation depuis l'AMAPA. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
 - **`002_testing_screens_dashboard_mediateur.cy.js`**
     - Le test `002_1` checke la navigation principaple une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardNav()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
-    - Le test `002_2` checke le "user settings panel" une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardUserSettings()`.
+    - Le test `002_2` checke le "user settings panel" une fois logué à l'aide d'une fonction `cy.AppJusticityDashboardUserSettings()`. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
     - Les tests `002_3`, `002_4` checke les écrans complets de de deux destinations différentes via la fonction `cy.AppJusticityDashboardDestination()`, c'est pour démontrer que l'approche par slug est possible pour s'affranchir de la navigation et des css selectors. Dans ce test, il est possible de choisir le device et il faut remplacer les credentials par les valeurs correctes.
 
@@ -78,13 +78,13 @@ Le test `003_1` checke les écrans du Dashboard en tant que USER à l'aide d'une
 **Dans le répertoire `webvitals`**
 
 - **`001_web_vitals_defaults.cy.js`**
-Exemple basique d'utilisation de Web Vitals sur le backoffice de justicity
+Un exemple basique d'utilisation de Web Vitals sur le backoffice de justicity
 
 - **`002_web_vitals_custom.cy.js`**
-Exemple personnalisé d'utilisation de Web Vitals sur le backoffice de justicity.
+Un exemple personnalisé d'utilisation de Web Vitals sur le backoffice de justicity.
 
 - **`003_web_vitals_report.cy.js`**
-Exemple personnalisé de Web Vitals sur le backoffice de justicity avec impression d'un rapport d'activité réduit dans le log du test lui-même.
+Un exemple personnalisé de Web Vitals sur le backoffice de justicity avec impression d'un rapport d'activité réduit dans le log du test lui-même.
 
 **Définition de Web Vitals**
 > Web Vitals is an initiative by Google to provide unified guidance for quality signals that are essential to delivering a great user experience on the web.
@@ -166,14 +166,15 @@ Pour information, le fichier de configuration. Voir `/cypress.config.js`.
 
 ### Fichiers de configuration clés-valeurs
 
-Dans le répertoire `cypress/fixtures/`, il y de nombreuses valeurs externalisées et utilisées dans les tests.
+Dans le fichier `cypress/fixtures/allValues.js`, il y de nombreuses valeurs externalisées et utilisées dans les tests.
 
 ### Détails sur les variables d'environnement
 
 Il y a une valeur importante : DEVICE_TYPE.
 
 #### (i) DEVICE_TYPE
-**Attention, ce choix possible du device n'est valable que pour les tests en JS `*.cy.js`  dans le répertoire `site`. Il est possible de cibler un terminal particulier e.g desktop, tablet, mobile... etc et donc de faire tourner les tests sur un device en particulier.**
+**Attention, ce choix possible du device n'est valable que pour les tests en JS `*.cy.js`  dans le répertoire `site`. Il est possible de cibler un terminal particulier e.g desktop, tablet, mobile... etc et donc de faire tourner les tests sur ce device en particulier. Tout est indiqué dans une Class du nom de `UtilityAmapa` dans le fichier `/support/utilityGetStuffForAmapa.js`**
+
 
 ```bash
 # DEVICE_TYPE
@@ -196,7 +197,9 @@ tablet-landscape
 
 
 # For viewport as iphone-6, ipad-2, macbook-13, macbook-16. See https://docs.cypress.io/api/commands/viewport.
-# The setting are defined inside this class file utilityGetStuffForFov.js in the method DeviceType(deviceType)
+
+
+# The setting are defined inside this class file utilityGetStuffForAmapa.js in the method DeviceType(deviceType)
 
 
 ```
@@ -285,7 +288,7 @@ npm run cy:run:tags
 
 ## PLUGINS
 
-Pour faire fonctionner la suite, il faut lancer la commande `npm install`.
+Pour faire fonctionner la suite E2E, il faut lancer la commande `npm install`.
 
 ```bash
 
@@ -306,19 +309,21 @@ npm install -–save-dev <package-name>
 ## DOCUMENTATION
 
 - Cypress (official)
-https://www.cypress.io/
+[https://www.cypress.io/](https://www.cypress.io/)
 
 - Table of Contents API Cypress
-https://docs.cypress.io/guides/overview/why-cypress
+[https://docs.cypress.io/guides/overview/why-cypress](https://docs.cypress.io/guides/overview/why-cypress)
 
 - Cypress on github (official)
-https://github.com/cypress-io/
+[https://github.com/cypress-io/](https://github.com/cypress-io/)
 
 
 ## INSTALL
 
 
 ### REQUIREMENTS
+
+**If you need to check your install. On a mac better, use, homebrew to install the all stuff.**
 
 
 ```bash
@@ -333,6 +338,82 @@ node -v
 npx -v
 # 9.6.5
 ```
+
+
+### Install Homebrew, Node, Cypress
+
+Extrait du readme de "Learning and Building E2E test automation with Cypress & OKR" - [https://github.com/bflaven/book-learning-and-building-e2e-test-automation-with-cypress-and-okr](https://github.com/bflaven/book-learning-and-building-e2e-test-automation-with-cypress-and-okr)
+
+
+
+```bash
+# 1. INSTALL HOMEBREW AND XCODE
+
+# installing Xcode's Command Line Tools
+xcode-select --install
+# installing and Setting Up Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/
+install/master/install)"
+
+
+# 2. INSTALL NODE.JS 
+
+# check homebrew (required apparently)
+brew doctor
+
+# install node with homebrew
+brew install nodejs
+
+# check the install node version + NPM (Node Package Manager) version
+node -v
+npm -v
+
+# should output v18.0.0 for instance depending of your version
+npx -v
+# 8.6.0
+# should output 8.6.0 for instance depending of your version
+
+
+# eventually make some updates
+brew update
+brew upgrade nodejs
+
+
+# 3. INSTALL CYPRESS
+
+# go to the main directory
+cd /Users/brunoflaven/Documents/01_work/cypress_book/
+
+# create your testing directory
+mkdir e2e_testing_cypress_v9
+
+# go to the testing directory
+cd e2e_testing_cypress_v9
+cd /Users/brunoflaven/Documents/01_work/cypress_book/e2e_testing_cypress_v9/
+
+
+# install generate the package.json
+# generated a package.json and node_modules directory
+npm init 
+
+# fill the package.json
+# description: This attempt made for E2E-CYPRESS-WP, runnings cypress tests on WP  for a testing for PO. Better generated a package.json and node_modules directory
+# keywords: cypress, attempt, PO, E2E-CYPRESS-WP, e2e-cypress-wp
+# author: bflaven
+# git: https://github.com/bflaven/
+
+# install old version 9.7.0
+npm install --save-dev cypress@9.7.0
+
+
+# launch Cypress once installed
+npx cypress open
+
+```
+
+- Xcode - [https://developer.apple.com/support/xcode/](https://developer.apple.com/support/xcode/) 
+- Homebrew - [https://brew.sh/](https://brew.sh/)
+- Node - [https://nodejs.org/en/](https://nodejs.org/en/)
 
 
 ## VERSION
@@ -352,6 +433,7 @@ npx -v
 
 
 ## OTHERS
+Some other infos on libraries or package used in this project and the project that was used as a model. See `cypress-cucumber-boilerplate`.
 
 - A library: This is a library named `chancejs`. Chance is a minimalist generator of random [1] strings, numbers, etc. to help reduce some monotony particularly while writing automated tests or anywhere else you need anything random.
 https://chancejs.com/
